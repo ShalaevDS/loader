@@ -8,19 +8,24 @@
 </head>
 <body>
 
-<div class="wrapper">
-    <div id="loader"></div>
+<div class="loader" id="loader">
+    <div class="loader__circles-container">
+        <div class="loader-circle loader-circle--under"></div>
+        <div class="loader-circle loader-circle--start"></div>
+        <div class="loader-circle loader-circle--moving"></div>
+        <div class="loader-circle loader-circle--full"></div>
+    </div>
+    <div class="loader__current-number">0%</div>
 </div>
 
-<div class="loader">
-    <div class="loader__circle loader__circle--under"></div>
-    <div class="loader__circle loader__circle--start"></div>
-    <div class="loader__circle loader__circle--top"></div>
-    <div class="loader__circle loader__circle--full"></div>
+<div class="example-buttons">
+    <button onclick="loader1.update(0)" class="btn-update">update to 0</button>
+    <button onclick="loader1.update(20)" class="btn-update">update to 20</button>
+    <button onclick="loader1.update(30)" class="btn-update">update to 30</button>
+    <button onclick="loader1.update(35)" class="btn-update">update to 35</button>
+    <button onclick="loader1.update(65)" class="btn-update">update to 65</button>
+    <button onclick="loader1.update(100)" class="btn-update">update to 65</button>
 </div>
 
-<div class="ex-par">
-    <div class="ex"></div>
-</div>
 </body>
 </html>
